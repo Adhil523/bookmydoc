@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+<div class="alert alert-success" role="alert" style="padding-top: 82px;
+padding-bottom: 113px;
+}">
+    <h4 class="alert-heading">Your booking is successful!</h4>
+    <p>Your appointment is scheduled at {{cname}}</p>
+    <br>
+    <p>The time slot given is {{slot}}</p>
+    <hr>
+    <p class="mb-0">Make sure to reach the clinic on the given time. Have a nice day!</p>
+  </div>
+{%endblock%}

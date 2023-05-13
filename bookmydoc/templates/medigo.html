@@ -1,0 +1,15 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block styles%}
+<link rel="stylesheet" href="{%static '/css/prescription.css'%}">
+{%endblock%}
+{%block content%}
+<form id='prescription_analysis' class='group' action='' method='POST'>
+    {%csrf_token%}
+    <input type='text' placeholder='Prescription' class='input-field' name='pres'>
+    <input type='text' placeholder='Disease'  class='input-field'name='dis'>
+    <input type='text' placeholder='Age'  class='input-field' name='age'>
+    <input type='text' placeholder='Allergies(if any)'  class='input-field' name='allergy'>
+    <input type ='submit' class="btn btn-outline-success" value='Check'>
+</form>
+{%endblock%}

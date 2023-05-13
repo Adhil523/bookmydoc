@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+
+<div class="alert alert-success" role="alert" style="padding-bottom: 162px;">
+        <h4 class="alert-heading">A Slot Has Been Found Nearby!</h4>
+        <p>You have a free slot at {{cname}} during the time {{slot}}.Do you want to confirm your booking?</p>
+        <a href="success" class="btn btn-primary">Proceed</a>
+        <a href="/" class="btn btn-danger">Cancel</a>
+
+        <hr>
+        <p class="mb-0">NOTE: This clinic is located by calculating the shortest distance from your location to clinics nearby.</p>
+      </div>
+{%endblock%}

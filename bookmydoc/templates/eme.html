@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block styles%}
+<link rel="stylesheet" href="{%static '/css/prescription.css'%}">
+{%endblock%}
+{%block content%}
+<form action='' method='POST'>
+    {%csrf_token%}
+    <label class="labels">Specify your emergency</label>
+    <input type='text' class='input-field'  placeholder="Emergency">
+    <br>
+    <label class="labels">Your nearest locality</label>
+    <input type='text'  class='input-field' placeholder="Locality">
+    <br>
+    <input type='submit' class="btn btn-outline-success" value='Submit'>
+</form>
+{%endblock%}

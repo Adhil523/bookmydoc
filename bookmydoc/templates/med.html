@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+{%block styles%}
+<link rel="stylesheet" href="{%static '/css/base.css'%}">
+{%endblock%}
+<div class="alert alert-primary" role="alert">
+    The cheaper alternatives for the supplements in your prescription are: 
+
+  </div>
+{%for i in cheap%}
+<label class="labels">{{i}}</label>
+{%endfor%}
+{%endblock%}
